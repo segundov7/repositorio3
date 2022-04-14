@@ -1,9 +1,16 @@
 import React from "react"
 
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom/client"
 
-function App (){
-    return "Hola mundo"
-}
+import App from "./components/App"
 
-ReactDOM.render(<App/>, document.getElementById("root"));
+import "./components/estilos.scss"
+
+
+
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
+
+
+root.render(<App/>)
