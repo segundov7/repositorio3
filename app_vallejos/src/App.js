@@ -1,6 +1,6 @@
-import Header from "./Header"
-import Footer from "./Footer"
-import Main from "./Main"
+import Header from "./components/jsx/Header"
+import Footer from "./components/jsx/Footer"
+import Main from "./components/jsx/Main"
 
 const App =()=>{
     return (

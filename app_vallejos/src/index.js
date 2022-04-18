@@ -2,9 +2,9 @@ import React from "react"
 
 import ReactDOM from "react-dom/client"
 
-import App from "./components/App"
+import App from "./App"
 
-import "./components/estilos.scss"
+import "./components/scss/estilos.scss"
 
 
 
