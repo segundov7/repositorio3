@@ -5,7 +5,7 @@ const Footer =()=>{
     
     <footer className="footer">
     <NavBar/>
-        <p>&copy; Copyright - Todos los derechos reservados</p> 
+        <p className="footer__p">&copy; Copyright - Todos los derechos reservados</p> 
     </footer>
     
     </>

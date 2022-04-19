@@ -1,14 +1,11 @@
-import NavBar from "./NavBar"
-
 const Header = () => {
     return (
-    
+
     <header>
-        <h1>Tienda de Bebidas blablablabla</h1>
-        <NavBar/> 
+        <h1>Tienda de Bebidas</h1> 
     </header>
     
-    
+
     )
 }
 

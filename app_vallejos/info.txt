@@ -22,3 +22,7 @@ const Componente = () => {}
 const Componente = () => {
   return "hola mundo"
 }
+
+
+
+minuto 13 clavado

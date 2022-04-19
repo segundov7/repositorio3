@@ -1,3 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body ,#root{
+    height: 100vh
+}
+#root{
+    display: flex;
+    flex-direction: column;
+}
+#root > main , #root > header , #root > footer{
+    padding: 1rem;
+}
+
+
 @import "tipografia";
 @import "nav";
 @import "footer";
+@import "main";
+@import "header";
