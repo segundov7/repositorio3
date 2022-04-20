@@ -1,14 +1,36 @@
-const NavBar =()=>{
-    return (
-    <nav className ="nav"> 
-        <ul className="menu">
-            <li><a href="#" className="nav__link">Inicio</a></li>
-            <li><a href="#" className="nav__link">Productos</a></li>
-            <li><a href="#" className="nav__link">Nosotros</a></li>
-            <li><a href="#" className="nav__link">Contacto</a> </li>
-        </ul>         
-    </nav>
-    )
+import CartWidget from "./CartWidget"
+
+
+const NavBar =(props)=>{
+
+ 
+    if(props.header){
+        return (
+            <nav className ="nav"> 
+                <ul className="menu">
+                    <li><a href="#">{props.nombre}</a></li>
+                    <li><a href="#">{props.link[0]}</a></li>
+                    <li><a href="#">{props.link[1]}</a></li>
+                    <li><a href="#">{props.link[2]}</a></li>
+                    <li><a href="#">{props.link[3]}</a> </li>
+                    <li><a href="#"><span class="material-icons">shopping_cart</span></a></li>
+                </ul>         
+            </nav>
+        )
+    }else{
+        return (
+            <nav className ="nav"> 
+                <ul className="menu">
+                    <li><a href="#">{props.link[0]}</a></li>
+                    <li><a href="#">{props.link[1]}</a></li>
+                    <li><a href="#">{props.link[2]}</a></li>
+                    <li><a href="#">{props.link[3]}</a></li>
+                    
+                </ul>         
+            </nav>
+        )
+    }
 }
+<CartWidget/>
 
 export default NavBar

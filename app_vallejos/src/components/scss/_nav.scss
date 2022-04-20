@@ -1,24 +1,21 @@
 .menu{
     list-style: none;
     padding: 0;
-    background-color: #092327;
+    background-color: rgb(9, 35, 39);
     width: 100%;
     margin: 0;
+    li{
+        display: inline-block;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+            &:hover{
+                background-color: rgb(239, 131, 84);
+            }
+        }
+    }
 }
 
-.menu li a{
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    display: block;
-}
-
-.menu li{
-    display: inline-block;
-    text-align: center;
-
-}
-
-.menu li a:hover{
-    background-color: #ef8354;
-}
