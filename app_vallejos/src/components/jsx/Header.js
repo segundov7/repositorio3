@@ -1,6 +1,7 @@
 import NavBar from "./NavBar"
 
 const links = ["Inicio","Productos","Nosotros","Contacto"];
+
 const nombre = prompt("¿Cual es tu nombre?")
 
 const Header = () => {
@@ -12,6 +13,7 @@ const Header = () => {
             nombre={nombre}
             link={links}
             header
+            
         />
     </header>
     

@@ -24,6 +24,19 @@ const Componente = () => {
 }
 
 
+HOOK: funciones que extienden la funcionalidad del mismo componente
 
-01 41 10
+1- se ejecutan adentro de un componente
+2- no pueden estar en ningun flujo
+
+
+CICLO DE VIDA:
+mount
+update
+ - el estado cambia
+ - su padre se actualizo
+ - si los props cambian 
+unmount 
+
+01 37 07
 

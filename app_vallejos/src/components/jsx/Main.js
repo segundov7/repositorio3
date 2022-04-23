@@ -4,6 +4,9 @@ const Main = ({children}) => {
     <main>
         <p>Hola, bienvenido</p>
         {children}
+        <div>
+            <button onClick={()=>{alert("COMO ESTAS?")}}>click</button>
+        </div>
         
         
 

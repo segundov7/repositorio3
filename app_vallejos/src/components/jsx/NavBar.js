@@ -9,11 +9,12 @@ const NavBar =(props)=>{
             <nav className ="nav"> 
                 <ul className="menu">
                     <li><a href="#">{props.nombre}</a></li>
-                    <li><a href="#">{props.link[0]}</a></li>
-                    <li><a href="#">{props.link[1]}</a></li>
-                    <li><a href="#">{props.link[2]}</a></li>
-                    <li><a href="#">{props.link[3]}</a> </li>
-                    <li><a href="#"><span className="material-icons">shopping_cart</span></a></li>
+                    {
+                        props.link.map(item =>(
+                            <li><a href="#">{item}</a></li>
+                        ))
+                    }
+                    <CartWidget/>
                 </ul>         
             </nav>
         )
@@ -21,16 +22,16 @@ const NavBar =(props)=>{
         return (
             <nav className ="nav"> 
                 <ul className="menu">
-                    <li><a href="#">{props.link[0]}</a></li>
-                    <li><a href="#">{props.link[1]}</a></li>
-                    <li><a href="#">{props.link[2]}</a></li>
-                    <li><a href="#">{props.link[3]}</a></li>
-                    
+                {
+                    props.link.map(item =>(
+                            <li><a href="#">{item}</a></li>
+                        ))
+                }
                 </ul>         
             </nav>
         )
     }
 }
-<CartWidget/>
+
 
 export default NavBar
