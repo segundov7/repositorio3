@@ -13,11 +13,13 @@ const App =()=>{
     return (
         <>
         <Header/>
-        <ItemListContainer greeting = {<b> Hola como estas? Bienvenido</b>}/>
-        <ItemCount stock = {10} initial = {1} onAdd={onAdd}/>
+        <ItemCount
+         stock = {10} initial = {1} onAdd={onAdd}/>
+        <ItemListContainer/>
         <Main/>
         <Footer/>
         </>
+        
     )
 }
 

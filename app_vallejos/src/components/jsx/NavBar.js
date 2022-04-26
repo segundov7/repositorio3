@@ -10,11 +10,12 @@ const NavBar =(props)=>{
                 <ul className="menu">
                     <li><a href="#">{props.nombre}</a></li>
                     {
-                        props.link.map(item =>(
-                            <li><a href="#">{item}</a></li>
+                        props.link.map((item, index) =>(
+                            <li key={index}><a href="#">{item}</a></li>
                         ))
+                       
                     }
-                    <CartWidget/>
+                    {props.header && <CartWidget/>}
                 </ul>         
             </nav>
         )
@@ -23,10 +24,11 @@ const NavBar =(props)=>{
             <nav className ="nav"> 
                 <ul className="menu">
                 {
-                    props.link.map(item =>(
-                            <li><a href="#">{item}</a></li>
-                        ))
-                }
+                    props.link.map((item, index) =>(
+                        <li key={index}><a href="#">{item}</a></li>
+                    ))
+                   
+                }   
                 </ul>         
             </nav>
         )

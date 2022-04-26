@@ -2,17 +2,18 @@ import NavBar from "./NavBar"
 
 const links = ["Inicio","Productos","Nosotros","Contacto"];
 
-const nombre = prompt("¿Cual es tu nombre?")
+
 
 const Header = () => {
     return (
 
     <header>
-        <h1>Tienda de Bebidas</h1> 
+        <h1>Tienda de bebidas</h1> 
         <NavBar
-            nombre={nombre}
+            nombre= "Segundo"
             link={links}
             header
+            
             
         />
     </header>

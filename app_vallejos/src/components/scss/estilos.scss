@@ -13,6 +13,10 @@ html , body ,#root{
 #root > main , #root > header , #root > footer{
     padding: 1rem;
 }
+.productos_li{
+    margin: 10px;
+
+}
 
 
 @import "tipografia";
