@@ -4,6 +4,17 @@ import Main from "./components/jsx/Main"
 import ItemListContainer from "./components/jsx/ItemListContainer"
 import ItemCount from "./components/jsx/ItemCount"
 
+
+const pedido = fetch('https://fakestoreapi.com/products/1')
+
+pedido 
+.then ((respuesta)=>{
+    console.log(respuesta)
+})
+.catch ((err)=>{
+    console.log(err)
+})
+
 const App =()=>{
     
     const onAdd =()=>{
@@ -13,8 +24,7 @@ const App =()=>{
     return (
         <>
         <Header/>
-        <ItemCount
-         stock = {10} initial = {1} onAdd={onAdd}/>
+        <ItemCount stock = {10} initial = {1} onAdd={onAdd}/>
         <ItemListContainer/>
         <Main/>
         <Footer/>
