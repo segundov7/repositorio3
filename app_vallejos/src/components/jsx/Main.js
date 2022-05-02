@@ -1,17 +1,6 @@
-const Main = ({children}) => {
+const Main = () => {
 
-    return(
-    <main>
-        <p>Hola, bienvenido</p>
-        {children}
-        <div>
-            <button onClick={()=>{alert("COMO ESTAS?")}}>click</button>
-        </div>
-        
-        
-
-    </main>
-    )
+    return
 }
 
 export default Main

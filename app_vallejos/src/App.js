@@ -3,17 +3,9 @@ import Footer from "./components/jsx/Footer"
 import Main from "./components/jsx/Main"
 import ItemListContainer from "./components/jsx/ItemListContainer"
 import ItemCount from "./components/jsx/ItemCount"
+import ItemDetailContainer from "./components/jsx/ItemDetailContainer"
 
 
-const pedido = fetch('https://fakestoreapi.com/products/1')
-
-pedido 
-.then ((respuesta)=>{
-    console.log(respuesta)
-})
-.catch ((err)=>{
-    console.log(err)
-})
 
 const App =()=>{
     
@@ -24,8 +16,9 @@ const App =()=>{
     return (
         <>
         <Header/>
-        <ItemCount stock = {10} initial = {1} onAdd={onAdd}/>
-        <ItemListContainer/>
+
+
+        <ItemDetailContainer/>
         <Main/>
         <Footer/>
         </>
@@ -34,3 +27,6 @@ const App =()=>{
 }
 
 export default App
+
+//        <ItemCount stock = {10} initial = {1} onAdd={onAdd}/>
+//        <ItemListContainer/>

@@ -1,3 +1,4 @@
+/*
 import ItemList from "./ItemList"
 
 import {useEffect, useState} from "react" 
@@ -41,7 +42,7 @@ const ItemListContainer = () => {
           //console.log("recibo producto")
           //console.log(productosDeBaseDeDatos)
         
-          setProductos(productosDeBaseDeDatos)
+          setProductos(contenido)
   
         },2000)
             console.log("Salio todo bien")
@@ -66,3 +67,5 @@ const ItemListContainer = () => {
 }
 
 export default ItemListContainer
+
+*/

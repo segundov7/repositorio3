@@ -1,22 +1,22 @@
-import Item from "./Item"
+/*import Item from "./Item"
 
 const ItemList = ({productos})=>{
     return<>
-<ul>
+        <ul>
         {
             productos.map((producto)=>{
                
-                return<li key={producto.id} className="productos_li">{producto.nombre}___${producto.precio}</li>
+                return<Item producto={producto} key={producto.id} />
             
             })
         }
 
 
       </ul>
-    <Item/>
     </>
 }
 
 export default ItemList
+*/
 
 
