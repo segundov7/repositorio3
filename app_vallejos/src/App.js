@@ -9,16 +9,12 @@ import ItemDetailContainer from "./components/jsx/ItemDetailContainer"
 
 const App =()=>{
     
-    const onAdd =()=>{
-
-    }
-    
     return (
         <>
         <Header/>
-
-
+        <ItemListContainer/>
         <ItemDetailContainer/>
+
         <Main/>
         <Footer/>
         </>

@@ -1,19 +1,13 @@
-import Item from "./Item"
-const ItemDetail = ({productos}) => {
+import React from 'react';
+
+
+function ItemDetail({detalle}){
+
   return (
-    <section className="itemDetail">
-        {
-            productos.map(producto =>{
-                return(
-                    <Item key={producto.id} producto = {producto}/>
-                )
-            })
-        }
-
-
-    </section>
-)
-
+    <>
+        <p key={detalle.id}>{detalle.detalle}</p>
+    </>
+  )
 }
 
 export default ItemDetail

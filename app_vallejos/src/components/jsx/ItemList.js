@@ -1,22 +1,21 @@
-/*import Item from "./Item"
-
-const ItemList = ({productos})=>{
-    return<>
-        <ul>
+import Item from "./Item"
+const ItemList = ({productos}) => {
+  return (
+    <section className="itemDetail">
         {
-            productos.map((producto)=>{
-               
-                return<Item producto={producto} key={producto.id} />
-            
+            productos.map(producto =>{
+                return(
+                    <Item key={producto.id} producto = {producto}/>
+                )
             })
         }
 
 
-      </ul>
-    </>
+    </section>
+)
+
 }
 
 export default ItemList
-*/
 
 
