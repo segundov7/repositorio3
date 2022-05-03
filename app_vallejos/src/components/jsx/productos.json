@@ -3,48 +3,48 @@
         "id": "1",
         "nombre": "Cerveza",
         "precio": "400",
-        "detalle": "bebida alcoholica refrescante" 
+        "detalle": "Bebida alcoholica refrescante" 
     },
     {
         "id": "2",
         "nombre": "Vino",
         "precio": "500",
-        "detalle": "bebida alcoholica extraida de la fermentacion de las uvas"
+        "detalle": "Bebida alcoholica extraida de la fermentacion de las uvas"
     },
     {
         "id": "3",
         "nombre": "Fernet",
         "precio": "900",
-        "detalle": "bebida alcoholica - aperitivo"
+        "detalle": "Bebida alcoholica - aperitivo"
     },
     {
         "id": "4",
         "nombre": "Coca-cola",
         "precio": "250",
-        "detalle": "bebida gaseosa sabor cola"
+        "detalle": "Bebida gaseosa sabor cola"
     },
     {
         "id": "5",
         "nombre": "Whisky",
         "precio": "1500",
-        "detalle": "bebida alcoholica de alta graduacion"
+        "detalle": "Bebida alcoholica de alta graduacion"
     },
     {
         "id": "6",
         "nombre": "Sprite",
         "precio": "250",
-        "detalle": "bebida gaseosa sabor lima limon"
+        "detalle": "Bebida gaseosa sabor lima limon"
     },
     {
         "id": "7",
         "nombre": "Red Bull",
         "precio": "200",
-        "detalle": "bebida energizante sabor frambueza"
+        "detalle": "Bebida energizante sabor frambuesa"
     },
     {
         "id": "8",
         "nombre": "Vodka",
         "precio": "1000",
-        "detalle": "bebida alcoholica de alta graduacion"
+        "detalle": "Bebida alcoholica de alta graduacion"
     }
   ]

@@ -8,18 +8,23 @@ function ItemDetailContainer() {
 
   useEffect(() => {
 
-    setTimeout(() => {
-      let promesa = new Promise(function (res) {
-              res(productos);
-          })
-      promesa
-      .then(detalle => {
+    let promesa = new Promise(function(res) {
+      setTimeout(()=>{
+
+        const miProducto = productos.find (product =>product.id === "7")
+
+
+        res(miProducto);
+
+      },5000);
+    })
+    promesa
+      .then(detalle =>{
         setProducto(detalle);
       })
-      .catch(err => {
-        console.log(err);
+      .catch(err =>{
+        console.log(err)
       })
-    }, 5000);
       
   }, []);
 
@@ -30,14 +35,8 @@ function ItemDetailContainer() {
             producto.length == 0 && <p>Cargando...</p>
         }
         {
-            producto.map((detail,i)=>{
-                return (
-                  <ItemDetail detalle={detail} key={i} />
-                )
-            })
+           <ItemDetail detalle = {producto}/>
         }
-    
-
     </>
   )
 }
