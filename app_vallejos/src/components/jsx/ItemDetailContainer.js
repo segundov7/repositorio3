@@ -2,6 +2,7 @@ import ItemDetail from './ItemDetail';
 import productos from './productos.json';
 import { useState, useEffect } from 'react';
 
+
 function ItemDetailContainer() {
 
   const [producto, setProducto] = useState([]);
@@ -11,12 +12,12 @@ function ItemDetailContainer() {
     let promesa = new Promise(function(res) {
       setTimeout(()=>{
 
-        const miProducto = productos.find (product =>product.id === "7")
+        const miProducto = productos.find (product =>product.id === "8")
 
 
         res(miProducto);
 
-      },5000);
+      },4000);
     })
     promesa
       .then(detalle =>{

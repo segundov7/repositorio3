@@ -1,6 +1,16 @@
+/*
+import ItemDetailContainer from "./ItemDetailContainer"
+import ItemListContainer from ".ItemListContainer"
+
 const Main = () => {
 
-    return
+    return(
+        <main>
+            <ItemListContainer/>
+            <ItemDetailContainer/>
+        </main>
+    )
 }
 
 export default Main
+*/

@@ -1,15 +1,9 @@
 import NavBar from "./NavBar"
 const Footer =()=>{
 
-    const links = ["Inicio","Productos","Nosotros","Contacto",]
-
     return (
     <footer className="footer">
-    <NavBar
-        link={links}
-        
-        
-    />
+    <NavBar nombre="Segundo"/>
         <p className="footer__p">&copy; Copyright - Todos los derechos reservados</p> 
     </footer>
     )
