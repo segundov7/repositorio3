@@ -1,30 +1,39 @@
 import { useEffect, useState } from "react"
+import { useParams } from "react-router-dom";
 import ItemList from "./ItemList"
 import productos from './productos.json';
-import { useParams } from "react-router-dom"
+
 
 const ItemListContainer = () => {
    
         const [producto, setProducto] = useState([])
         const [cargando , setCargando] = useState(true)
+        const {categorias} = useParams()
 
-        const resultado = useParams()
-        console.log(resultado)
+        
 
         useEffect(()=>{
-        const pedido = new Promise((res)=>{
-            setTimeout(()=>{
-                res(productos);
-            },2000)
-        })
-        pedido
-        .then(()=>{
-            setCargando(false)
-            setProducto(productos)
-        })
-        .catch(()=>{
+            const pedido = new Promise((res)=>{
+                setTimeout(()=>{
+                    res(productos);
+                },2000)
+            })
+
+
+            pedido
+            .then(respuesta =>{
+                if(categorias){
+                    const categoria = productos.filter((item)=> item.categorias.toLowerCase() === categorias)
+                    setProducto(categoria)
+                    
+                }else{
+                    setProducto(productos)
+                    setCargando(false)
+                }
+            })
+            .catch(()=>{
             console.log("Salio todo mal")
-        })
+        },[categorias])
 
     })
 

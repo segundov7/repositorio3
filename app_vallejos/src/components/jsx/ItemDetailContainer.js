@@ -12,7 +12,7 @@ function ItemDetailContainer() {
     let promesa = new Promise(function(res) {
       setTimeout(()=>{
 
-        const miProducto = productos.find (product =>product.id === "8")
+        const miProducto = productos.find (product =>product.id === 4)
 
 
         res(miProducto);
