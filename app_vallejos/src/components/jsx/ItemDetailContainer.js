@@ -1,24 +1,33 @@
 import ItemDetail from './ItemDetail';
 import productos from './productos.json';
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
 
 function ItemDetailContainer() {
 
-  const [producto, setProducto] = useState([]);
+  const [producto, setProducto] = useState({});
+  const [cargando, setCargando] = useState(true)
+  const {id} = useParams()
+
 
   useEffect(() => {
 
-    let promesa = new Promise(function(res) {
-      setTimeout(()=>{
+    let promesa = new Promise(function (res) {
+        setTimeout(() => {
 
-        const miProducto = productos.find (product =>product.id === 4)
+          const miProducto = productos.filter((producto)=>{
+            return producto.id == id
+          })[0]
+
+          res(miProducto)
+          setCargando(false)
 
 
-        res(miProducto);
+          
 
-      },4000);
-    })
+        }, 500);
+      })
     promesa
       .then(detalle =>{
         setProducto(detalle);
@@ -27,19 +36,20 @@ function ItemDetailContainer() {
         console.log(err)
       })
       
-  }, []);
+  },);
 
 
-  return (
-    <>
-        {
-            producto.length == 0 && <p>Cargando...</p>
-        }
-        {
-           <ItemDetail detalle = {producto}/>
-        }
-    </>
-  )
+  if(cargando){
+    return(
+      <p>Cargando...</p>
+    )
+  }else{
+    return(
+      <>
+      <ItemDetail detalle = {producto}/>
+      </>
+    )
+  }
 }
 
 export default ItemDetailContainer;

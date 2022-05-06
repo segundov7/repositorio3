@@ -8,34 +8,35 @@ const ItemListContainer = () => {
    
         const [producto, setProducto] = useState([])
         const [cargando , setCargando] = useState(true)
-        const {categorias} = useParams()
+        const {categoria} = useParams()
 
         
 
         useEffect(()=>{
+            console.log(`categorias`,categoria)
             const pedido = new Promise((res)=>{
                 setTimeout(()=>{
                     res(productos);
-                },2000)
+                },500)
             })
 
 
             pedido
             .then(respuesta =>{
-                if(categorias){
-                    const categoria = productos.filter((item)=> item.categorias.toLowerCase() === categorias)
-                    setProducto(categoria)
+                if(categoria){
+                    const miProducts = productos.filter((item)=> item.categoria === categoria)
+                    setProducto(miProducts)
                     
                 }else{
-                    setProducto(productos)
+                    setProducto(respuesta)
                     setCargando(false)
                 }
             })
             .catch(()=>{
             console.log("Salio todo mal")
-        },[categorias])
+        })
 
-    })
+    },[categoria])
 
     if(cargando){
         return(

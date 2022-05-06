@@ -2,12 +2,11 @@ import CartWidget from "./CartWidget"
 import { Link } from "react-router-dom"
 
 
-const NavBar =({nombre,header})=>{
+const NavBar =({header})=>{
     if(header){
         return (
             <nav className ="nav"> 
                 <ul className="menu">
-                    <li><Link to="/" className="nav__link">{nombre}</Link></li>
                     <li><Link to="/bebidas/Cervezas" className="nav__link">Cervezas</Link></li>
                     <li><Link to="/bebidas/Vinos" className="nav__link">Vinos</Link></li>
                     <li><Link to="/bebidas/Whiskys" className="nav__link">Whiskys</Link></li>
@@ -22,7 +21,6 @@ const NavBar =({nombre,header})=>{
         return (
             <nav className ="nav"> 
                 <ul className="menu">
-                    <li><Link to="/" className="nav__link">{nombre}</Link></li>
                     <li><Link to="/bebidas/Cervezas" className="nav__link">Cervezas</Link></li>
                     <li><Link to="/bebidas/Vinos" className="nav__link">Vinos</Link></li>
                     <li><Link to="/bebidas/Whiskys" className="nav__link">Whiskys</Link></li>

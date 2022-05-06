@@ -8,7 +8,7 @@ const Header = () => {
         <Link to="/" className="titulo"><h1>Tienda de bebidas</h1> </Link>
         
         <NavBar
-            nombre= "Segundo"
+            
             header
         />
     </header>
