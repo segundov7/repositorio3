@@ -9,8 +9,6 @@ const ItemList = ({productos}) => {
                 )
             })
         }
-
-
     </section>
 )
 

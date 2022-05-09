@@ -19,12 +19,9 @@ function ItemDetailContainer() {
           const miProducto = productos.filter((producto)=>{
             return producto.id == id
           })[0]
-
+          
           res(miProducto)
           setCargando(false)
-
-
-          
 
         }, 500);
       })

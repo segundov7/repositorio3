@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "nombre": "Cerveza",
+        "nombre": "Heineken",
         "precio": 400,
         "detalle": "Bebida alcoholica refrescante" ,
         "categoria":"Cervezas",
@@ -9,15 +9,15 @@
     },
     {
         "id": 2,
-        "nombre": "Vino",
+        "nombre": "Trumpeter",
         "precio": 500,
         "detalle": "Bebida alcoholica extraida de la fermentacion de las uvas",
         "categoria":"Vinos",
-        "imagen":"https://www.barrelvinos.com.ar/wp-content/uploads/productos/7-798143-820243-400x400.jpg"
+        "imagen":"https://atomoconviene.com/atomo-ecommerce/55020-home_default/vino-varietal-trumpeter-malbec-750-cc--.jpg"
     },
     {
         "id": 3,
-        "nombre": "Fernet",
+        "nombre": "Fernet Branca",
         "precio": 900,
         "detalle": "Bebida alcoholica - aperitivo",
         "categoria":"Aperitivos",
@@ -34,7 +34,7 @@
     },
     {
         "id": 5,
-        "nombre": "Whisky",
+        "nombre": "Johnnie Walker Red label",
         "precio": 1500,
         "detalle": "Bebida alcoholica de alta graduacion",
         "categoria":"Whiskys",
@@ -58,10 +58,26 @@
     },
     {
         "id": 8,
-        "nombre": "Vodka",
+        "nombre": "Absolut",
         "precio": 1000,
         "detalle": "Bebida alcoholica de alta graduacion",
         "categoria":"Vodkas",
         "imagen":"https://d2r9epyceweg5n.cloudfront.net/stores/001/212/084/products/absolut-vodka-4347781-7f56e800776a7328bc15913893120686-1024-1024.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "baileys",
+        "precio": 1000,
+        "detalle": "Licor de chocolate y cafe ",
+        "categoria":"Licores",
+        "imagen":"https://bluemonk.com.ar/268-large_default/baileys-cream-750cc.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Quilmes",
+        "precio": 300,
+        "detalle": "Bebida alcoholica refrescante",
+        "categoria":"Cervezas",
+        "imagen":"https://jumboargentina.vtexassets.com/arquivos/ids/433499-800-600?v=636517616933330000&width=800&height=600&aspect=true"
     }
   ]

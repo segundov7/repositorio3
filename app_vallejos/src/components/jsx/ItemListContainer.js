@@ -17,23 +17,23 @@ const ItemListContainer = () => {
             const pedido = new Promise((res)=>{
                 setTimeout(()=>{
                     res(productos);
+                    pedido
+                    .then(respuesta =>{
+                        if(categoria){
+                            const miProducts = productos.filter((item)=> item.categoria === categoria)
+                            setProducto(miProducts)
+                            
+                        }else{
+                            setProducto(respuesta)
+                            setCargando(false)
+                        }
+                    })
+                    .catch(()=>{
+                    console.log("Salio todo mal")
                 },500)
             })
-
-
-            pedido
-            .then(respuesta =>{
-                if(categoria){
-                    const miProducts = productos.filter((item)=> item.categoria === categoria)
-                    setProducto(miProducts)
-                    
-                }else{
-                    setProducto(respuesta)
-                    setCargando(false)
-                }
-            })
-            .catch(()=>{
-            console.log("Salio todo mal")
+            
+            
         })
 
     },[categoria])
@@ -45,6 +45,7 @@ const ItemListContainer = () => {
     }else{
         return (
             <ItemList productos ={producto}/>
+            
         )
     }
 }
