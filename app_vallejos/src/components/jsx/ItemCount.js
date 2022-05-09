@@ -10,9 +10,8 @@ const ItemCount = ({stock,initial,onAdd})=>{
 
     const carrito = ()=>{
       onAdd(contador)
-      setConfirmado(true)
-      
-  }
+      setConfirmado(true)  
+    }
 
    
 
