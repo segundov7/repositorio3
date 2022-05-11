@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom"
 import ItemListContainer from "./components/jsx/ItemListContainer"
 import ItemDetailContainer from "./components/jsx/ItemDetailContainer"
 import Carrito from "./components/jsx/Carrito"
+import MiCustomProvider from "./components/jsx/CartContext"
 
 
 
@@ -12,16 +13,17 @@ const App =()=>{
     
     return (
         <BrowserRouter>
-            <Header/>
-            <Routes>
-                <Route path="/" element={<ItemListContainer/>}></Route>
-                <Route path="/bebidas/:categoria" element={<ItemListContainer/>}></Route>
-                <Route path="/bebida/:id" element={<ItemDetailContainer/>}></Route>
-                <Route path="/carrito" element={<Carrito/>}></Route>
-            </Routes>
-            <Footer/>
-        </BrowserRouter>
-        
+            <MiCustomProvider>
+                <Header/>
+                <Routes>
+                    <Route path="/" element={<ItemListContainer/>}></Route>
+                    <Route path="/bebidas/:categoria" element={<ItemListContainer/>}></Route>
+                    <Route path="/bebida/:id" element={<ItemDetailContainer/>}></Route>
+                    <Route path="/carrito" element={<Carrito/>}></Route>
+                </Routes>
+            </MiCustomProvider>
+                <Footer/>
+        </BrowserRouter>   
     )
 }
 
