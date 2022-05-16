@@ -24,10 +24,10 @@ const MiCustomProvider = ({children}) =>{
         return carrito.some(a => a.id === producto)
     }
     const carritoIcono = () => {
-        return carrito.reduce((acum, value) => acum + value.quantity, 0);
+        return carrito.reduce((acum, value) => acum + value.cantidad, 0);
     }
     const totalPagar = () =>{
-        return carrito.reduce((acum, value) => (acum + (value.quantity * value.producto.price)),0)
+        return carrito.reduce((acum, value) => (acum + (value.cantidad * value.producto.precio)),0)
     }
     const eliminarDelCarrito = (id) =>{
         const nuevoCarrito = carrito.filter(elemento => elemento.id !== id);
