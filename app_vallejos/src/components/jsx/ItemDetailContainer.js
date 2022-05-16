@@ -35,18 +35,12 @@ function ItemDetailContainer() {
       
   },);
 
+  return(
+    <>
+      {cargando ? <p>Cargando...</p> : <ItemDetail detalle = {producto}/>}
+    </>
+  )
 
-  if(cargando){
-    return(
-      <p>Cargando...</p>
-    )
-  }else{
-    return(
-      <>
-      <ItemDetail detalle = {producto}/>
-      </>
-    )
-  }
 }
 
 export default ItemDetailContainer;

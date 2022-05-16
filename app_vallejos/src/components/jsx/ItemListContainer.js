@@ -41,16 +41,13 @@ const ItemListContainer = () => {
 
     
 
-    if(cargando){
         return(
-            <p>Cargando...</p>
+            <>
+                {cargando ? <p>Cargando...</p>:  <ItemList productos ={producto}/>}
+            </>
         )
-    }else{
-        return (
-            <ItemList productos ={producto}/>
-            
-        )
-    }
+
 }
+
 
 export default ItemListContainer
