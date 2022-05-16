@@ -11,17 +11,17 @@ const Carrito = () => {
     <div>
     {carrito.length > 0 ?
       <>
-      
-      <div key={producto.id}>
-        <img className='imagenesItem' src= {producto.imagen}></img>
-        <h3>{producto.nombre}</h3>
-        <h3>Cantidad: {cantidad}</h3>
-        <h3>Precio (unidad): $ {producto.precio}</h3>
-        <h3>Total: $ {(cantidad) * (producto.precio)}</h3>
-        <button onClick={ () => eliminarDelCarrito(producto.id)}>Eliminar</button>
+      {carrito.map((item) => 
+      <div key={item.producto.id}>
+        <img className='imagenesItem' src= {item.producto.imagen}></img>
+        <h3>{item.producto.nombre}</h3>
+        <h3>Cantidad: {item.cantidad}</h3>
+        <h3>Precio (unidad): $ {item.producto.precio}</h3>
+        <h3>Total: $ {(item.cantidad) * (item.producto.precio)}</h3>
+        <button onClick={ () => eliminarDelCarrito(item.producto.id)}>Eliminar</button>
 
       </div> 
-      
+      )}
       <div> 
       <h3>Total a pagar: $ {totalPagar()}</h3> 
       <button onClick={vaciarCarrito}>Vaciar Carrito</button>
