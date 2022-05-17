@@ -27,7 +27,7 @@ const MiCustomProvider = ({children}) =>{
         return carrito.reduce((acum, value) => acum + value.cantidad, 0);
     }
     const totalPagar = () =>{
-        return carrito.reduce((acum, value) => (acum + (value.cantidad * value.producto.precio)),0)
+        return carrito.reduce((acum, value) => (acum + (value.cantidad * value.precio)),0)
     }
     const eliminarDelCarrito = (id) =>{
         const nuevoCarrito = carrito.filter(elemento => elemento.id !== id);
@@ -37,7 +37,7 @@ const MiCustomProvider = ({children}) =>{
         setCarrito([])
     }
     return(
-        <Provider value = {{agregarEnCarrito, vaciarCarrito, eliminarDelCarrito, totalPagar, carritoIcono}}>
+        <Provider value = {{agregarEnCarrito, vaciarCarrito, eliminarDelCarrito, totalPagar, carritoIcono, carrito }}>
             {children}
         </Provider>
     )
