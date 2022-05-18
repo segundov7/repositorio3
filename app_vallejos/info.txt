@@ -38,7 +38,7 @@ update
  - si los props cambian 
 unmount 
 
-01 07 00
+01 21 00
 
 rafce
 

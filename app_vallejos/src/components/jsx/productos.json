@@ -3,6 +3,7 @@
         "id": 1,
         "nombre": "Heineken",
         "precio": 400,
+        "stock": 10,
         "detalle": "Bebida alcoholica refrescante" ,
         "categoria":"Cervezas",
         "imagen":"https://jumboargentina.vteximg.com.br/arquivos/ids/339532-512-512/Cerveza-Retornable-Heineken-1-L-3-236821.jpg?v=636396268411500000"
@@ -10,7 +11,8 @@
     {
         "id": 2,
         "nombre": "Trumpeter",
-        "precio": 500,
+        "precio": 700,
+        "stock": 10,
         "detalle": "Bebida alcoholica extraida de la fermentacion de las uvas",
         "categoria":"Vinos",
         "imagen":"https://atomoconviene.com/atomo-ecommerce/55020-home_default/vino-varietal-trumpeter-malbec-750-cc--.jpg"
@@ -19,6 +21,7 @@
         "id": 3,
         "nombre": "Fernet Branca",
         "precio": 900,
+        "stock": 10,
         "detalle": "Bebida alcoholica - aperitivo",
         "categoria":"Aperitivos",
         "imagen":"https://labebidadetusfiestas.com.ar/37266-large_default/fernet-branca-1lt.jpg"
@@ -28,6 +31,7 @@
         "id": 4,
         "nombre": "Coca-cola",
         "precio": 250,
+        "stock": 10,
         "detalle": "Bebida gaseosa sabor cola",
         "categoria":"Sin Alcohol",
         "imagen":"https://m.media-amazon.com/images/I/5156FefjlqL._SX466_.jpg"
@@ -36,6 +40,7 @@
         "id": 5,
         "nombre": "Johnnie Walker Red label",
         "precio": 1500,
+        "stock": 10,
         "detalle": "Bebida alcoholica de alta graduacion",
         "categoria":"Whiskys",
         "imagen":"https://vinotecamasis.com.ar/wp-content/uploads/2021/01/JWalker-Red-Label-750ml-ML.png"
@@ -44,6 +49,7 @@
         "id": 6,
         "nombre": "Sprite",
         "precio": 250,
+        "stock": 10,
         "detalle": "Bebida gaseosa sabor lima limon",
         "categoria":"Sin Alcohol",
         "imagen":"https://jumboargentina.vtexassets.com/arquivos/ids/682853/Gaseosa-Sprite-Lima-lim-n-1-5-L-2-248096.jpg?v=637764969686070000"
@@ -52,6 +58,7 @@
         "id": 7,
         "nombre": "Red Bull",
         "precio": 200,
+        "stock": 10,
         "detalle": "Bebida energizante sabor frambuesa",
         "categoria":"Sin Alcohol",
         "imagen":"https://m.media-amazon.com/images/I/61E28l8RSsL._SL1500_.jpg"
@@ -60,6 +67,7 @@
         "id": 8,
         "nombre": "Absolut",
         "precio": 1000,
+        "stock": 10,
         "detalle": "Bebida alcoholica de alta graduacion",
         "categoria":"Vodkas",
         "imagen":"https://d2r9epyceweg5n.cloudfront.net/stores/001/212/084/products/absolut-vodka-4347781-7f56e800776a7328bc15913893120686-1024-1024.jpg"
@@ -68,6 +76,7 @@
         "id": 9,
         "nombre": "baileys",
         "precio": 1000,
+        "stock": 10,
         "detalle": "Licor de chocolate y cafe ",
         "categoria":"Licores",
         "imagen":"https://bluemonk.com.ar/268-large_default/baileys-cream-750cc.jpg"
@@ -76,6 +85,7 @@
         "id": 10,
         "nombre": "Quilmes",
         "precio": 300,
+        "stock": 10,
         "detalle": "Bebida alcoholica refrescante",
         "categoria":"Cervezas",
         "imagen":"https://jumboargentina.vtexassets.com/arquivos/ids/433499-800-600?v=636517616933330000&width=800&height=600&aspect=true"

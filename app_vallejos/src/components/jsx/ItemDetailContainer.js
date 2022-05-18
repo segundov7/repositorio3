@@ -1,7 +1,9 @@
 import ItemDetail from './ItemDetail';
-import productos from './productos.json';
+//import productos from './productos.json';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { db } from "./firebase";
+import { collection, getDocs } from "firebase/firestore";
 
 
 function ItemDetailContainer() {
@@ -12,28 +14,32 @@ function ItemDetailContainer() {
 
 
   useEffect(() => {
+    const productosCollection = collection(db, 'productos')
+    const preguntaDb = getDocs(productosCollection)
 
-    let promesa = new Promise(function (res) {
-        setTimeout(() => {
-
-          const miProducto = productos.filter((producto)=>{
-            return producto.id == id
-          })[0]
-          
-          res(miProducto)
-          setCargando(false)
-
-        }, 500);
+    preguntaDb
+    .then((res)=>{
+      const productosDb = res.docs.map(doc=>{
+        const idProducto = doc.data()
+        idProducto.id = doc.id
+        return idProducto
       })
-    promesa
-      .then(detalle =>{
-        setProducto(detalle);
-      })
-      .catch(err =>{
-        console.log(err)
-      })
-      
-  },);
+      if(id){
+        const filtrar = productosDb.filter((item) => item.id === id)
+        setProducto(filtrar)
+      } else {
+        setProducto(res)
+        
+      }
+    })
+    .catch(() =>{
+      console.log("Salio todo mal")
+    })
+    .finally(()=>{
+      setCargando(false)
+    })
+  },[id])
+     
 
   return(
     <>
