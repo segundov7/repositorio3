@@ -6,7 +6,7 @@ import ItemList from "./ItemList"
 //db es referencia a toda la base de datos donde estan todas la colecciones
 import { db } from "./firebase"
 //collection es una funcion que nos da una referencia a una coleccion dentro de una base de datos
-import { collection, getDoc, doc, getDocs, addDoc, query, where } from "firebase/firestore"
+import { collection, getDoc, doc, getDocs, addDoc, query, where, orderBy } from "firebase/firestore"
 
 
 const ItemListContainer = () => {
