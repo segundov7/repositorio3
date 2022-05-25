@@ -1,4 +1,4 @@
-import NavBar from "./NavBar"
+import NavBar from "../navbar/NavBar"
 const Footer =()=>{
 
     return (

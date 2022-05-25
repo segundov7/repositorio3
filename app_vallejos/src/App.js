@@ -1,11 +1,11 @@
-import Header from "./components/jsx/Header"
-import Footer from "./components/jsx/Footer"
+import Header from "./components/header/Header"
+import Footer from "./components/footer/Footer"
 import { BrowserRouter } from "react-router-dom"
 import { Routes, Route } from "react-router-dom"
-import ItemListContainer from "./components/jsx/ItemListContainer"
-import ItemDetailContainer from "./components/jsx/ItemDetailContainer"
-import Carrito from "./components/jsx/Carrito"
-import MiCustomProvider from "./components/jsx/CartContext"
+import ItemListContainer from "./components/items/ItemListContainer"
+import ItemDetailContainer from "./components/items/ItemDetailContainer"
+import Carrito from "./components/carrito/Carrito"
+import MiCustomProvider from "./components/carrito/CartContext"
 
 
 

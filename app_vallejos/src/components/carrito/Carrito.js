@@ -1,7 +1,7 @@
 import { useContext , useState} from "react"
 import { contexto } from "./CartContext"
 import { Link } from "react-router-dom"
-import { db } from "./firebase"
+import { db } from "../firebase/firebase"
 import { collection , addDoc } from "firebase/firestore"
 
 const Carrito = () => {
@@ -14,8 +14,8 @@ const Carrito = () => {
 
     const orden = {
       buyer : {
-        nombre : "pedro",
-        tel : "97346273",
+        name : "pedro",
+        phone : "97346273",
         email : "test@test"
       },
     

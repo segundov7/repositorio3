@@ -1,4 +1,4 @@
-import CartWidget from "./CartWidget"
+import CartWidget from "../carrito/CartWidget"
 import { Link } from "react-router-dom"
 
 

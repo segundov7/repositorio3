@@ -2,8 +2,8 @@ import ItemDetail from './ItemDetail';
 //import productos from './productos.json';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { db } from "./firebase";
-import {collection, doc, getDoc} from "firebase/firestore";
+import { db } from "../firebase/firebase";
+import { collection, getDocs,doc, getDoc } from "firebase/firestore";
 
 
 function ItemDetailContainer() {
