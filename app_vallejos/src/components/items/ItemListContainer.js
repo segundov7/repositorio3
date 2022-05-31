@@ -29,7 +29,7 @@ const ItemListContainer = () => {
             })
             setProducto(productos)
             if(categoria){
-                const miProducts = productos.filter((item) => item.categoria === categoria)
+                const miProducts = productos.filter((item) => item.categoria == categoria)
                 setProducto(miProducts);
             }
                 })

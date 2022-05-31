@@ -9,6 +9,10 @@ const Carrito = () => {
   const  {carrito, eliminarDelCarrito, totalPagar, vaciarCarrito}= useContext(contexto)
   const [idCompra, setIdCompra] = useState("")
 
+  const pagado =()=>{
+    alert("Gracias por su compra")
+  }
+
   const guardarCompra = () => {
     const ordenesCollection = collection(db,"ordenes")
 
@@ -50,14 +54,14 @@ const Carrito = () => {
         <h3>Total: $ {(item.cantidad) * (item.precio)}</h3>
         <button onClick={ () => eliminarDelCarrito(item.id)}>Eliminar</button>
         <button onClick={guardarCompra}>Finalizar compra</button>
-        {idCompra && <h3>Compra guardada con id: {idCompra}</h3>}
+        {idCompra && <h3>Compra guardada</h3>}
 
       </div> 
       )}
       <div> 
       <h3>Total a pagar: $ {totalPagar()}</h3> 
       <button onClick={vaciarCarrito}>Vaciar Carrito</button>
-      <button>Pagar</button>
+      <button onClick={pagado}>Pagar</button>
       </div>
       </>
     : <div>
